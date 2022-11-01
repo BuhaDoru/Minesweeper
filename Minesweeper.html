@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minesweeper</title>
+    <div class="card text-center">
+      <h5 class="card-header">Minesweeper</h5>
+      <div class="card-body">
+        <h5 class="card-title">To start the game just click in the desired box.</h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary" onclick="restartGame(), time()">Restart Game</a>
+      </div>
+    </div>
+    <br><br>
+    <div onmousedown = "right(event)">
+      <p>
+        <div id = "timer">
+          Timer 00 seconds
+        </div>
+        <div>
+          Number of mines: 10
+        </div>
+        <table id = grid>
+        </table>
+      </p>
+    </div>
+     <br><br>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+   </head>
+   </html>
