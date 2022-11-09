@@ -26,7 +26,7 @@
           for (let j = 0; j < 10; ++j) {
             cell = row.insertCell(j);
             cell.onclick = function() { clickCell(this); }; 
-            cell.ContextMenu = function() { flagCell(this); };
+            cell.onmousedown = function() { flagCell(this); };
             let mine = document.createAttribute("data-mine");       
             mine.value = "false";             
             cell.setAttributeNode(mine);
@@ -54,7 +54,9 @@
       }
 
       function flagCell(cell) {
-        cell.className = "flag"
+        if (cell.className != "clicked") {
+          cell.className = "flag"
+        }
       }
       
       
